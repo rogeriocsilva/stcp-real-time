@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 18",
+  "extends": [
+    "./node_modules/@tsconfig/node20/tsconfig.json",
+    "./node_modules/@tsconfig/strictest/tsconfig.json"
+  ],
+  "_version": "20.11.0",
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "node16",
+    "target": "es2022",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node16"
+  },
+  "ts-node": {
+    "esm": true // «———— enabling ESM for ts-node
+  }
+}
